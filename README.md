@@ -16,7 +16,7 @@ Add the following to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  your_package_name:
+  myextensions:
     git:
       url: https://github.com/Ceren-Canbaz/myextensions.git
 ```
@@ -34,7 +34,7 @@ flutter pub get
 The `RegexConstants` class provides commonly used regular expressions.
 
 ```dart
-import 'package:your_package_name/constants.dart';
+import 'package:myextensions/constants.dart';
 
 void main() {
   print(RegexConstants.EMAIL_REGEX);  // Prints the regex for validating emails
@@ -47,7 +47,7 @@ Use these extensions to easily access media query properties, theme data, and pa
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:your_package_name/extensions/context_extension.dart';
+import 'package:myextensions/extensions/context_extension.dart';
 
 class ExampleWidget extends StatelessWidget {
   @override
@@ -92,7 +92,7 @@ class ExampleWidget extends StatelessWidget {
 The `StringExtension` class provides validation methods to check if a string is a valid email, a valid password, or if it is not empty.
 
 ```dart
-import 'package:your_package_name/extensions/string_extension.dart';
+import 'package:myextensions/extensions/string_extension.dart';
 
 void main() {
   String email = "test@example.com";
